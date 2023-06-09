@@ -1,0 +1,27 @@
+.container {
+  padding: 0 40px;
+  position: relative;
+}
+img {
+  width: 400px;
+  height: 250px;
+}
+#button_buy {
+  color: aqua;
+  background: #000;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.user__list {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  display: none;
+}
+#button_order {
+  background: rgb(50, 204, 76);
+  border-radius: 5%;
+  width: 250px;
+  height: 30px;
+}

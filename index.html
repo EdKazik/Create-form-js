@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="image/27530600-01.jpg" alt="photo" />
+      </div>
+      <input id="button_buy" type="submit" value="Купити" />
+      <div class="user__list">
+        <form id="user__list-form">
+          <label
+            >ПІБ: <input id="full_name" type="text" name="full_name" /></label
+          ><br />
+          <br />
+          <label
+            >Місто:
+            <select name="city" id="city">
+              <option value="Kyiv">Kyiv</option>
+              <option value="Odessa">Odessa</option>
+              <option value="Kharkiv">Kharkiv</option>
+            </select></label
+          ><br /><br />
+          <label>Склад НП: <input type="number" name="post" /></label>
+          <div class="how__buy">
+            <h3>Спосіб оплати:</h3>
+            <label
+              >Банківська картка
+              <input type="radio" name="buy" value="card" /></label
+            ><br />
+            <label
+              >Після отримання
+              <input type="radio" name="buy" value="cash" /></label
+            ><br /><br />
+          </div>
+          <label>Кількість: <input type="number" name="quantity" /></label
+          ><br /><br />
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="3"
+            placeholder="Залишити коментар...."
+          ></textarea
+          ><br /><br />
+          <input id="button_order" type="submit" value="Замовити" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
