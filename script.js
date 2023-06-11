@@ -5,12 +5,9 @@ document.querySelector('#button_buy').addEventListener('click', () => {
 })
 
 const userForm = document.querySelector('#user__list-form');
-
-
 userForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    
     const formValues = new FormData(userForm);
     const formObject = {};
 
