@@ -19,13 +19,10 @@ userForm.addEventListener('submit', (event) => {
 
     for (const value of formValues) {
         formObject[value[0]] = value[1];
-        console.log(formObject['full_name'])
 
-        if (formObject['full_name'] === '' || formObject['post'] === '' || formObject['quantity'] === '') {
-            alert('INPUTNAME')
+        if (full_name.value.length === 0 || post.value.length === 0 || quantity.value.length === 0) {
             document.querySelector('.error__block').style.display = 'block';
-        } else {
-            alert('ELSE')
+        } else if (full_name.value.length > 0 || post.value.length > 0 || quantity.value.length > 0) {
             document.querySelector('.error__block').style.display = 'none';
             const newDiv = document.createElement('div');
             newDiv.classList.add('new__div');
